@@ -1,0 +1,31 @@
+<div class="container-fluid centrar">
+
+
+  <!-- Main component for a primary marketing message or call to action -->
+  <div  class="jumbotron animate__flipInX">
+    <div class="row">
+      <div class="animate__animated animate__bounce animate__faster" *ngFor="let resultadoGits of resultadoGits"
+           class="col-md4 col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <img [src]="resultadoGits.images.downsized_medium.url"
+                 [alt]="resultadoGits.title"
+                  class="img-responsive card-img-top " >
+            <p class="card-title">{{resultadoGits.title}}</p>
+            <!--  {{resultadoGits.images.downsized_medium.url}}-->
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+
+</div>
+<!--
+ <ul>
+       <li *ngFor="let resultadoGits of resultadoGits">
+            {{resultadoGits.title}}
+          </li>
+        </ul>-->
